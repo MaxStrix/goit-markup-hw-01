@@ -1,0 +1,257 @@
+/* global border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.full-page-config {
+    height: 2350px;
+    width: 1600px;
+    margin-left: 200px;
+}
+
+/* header -----------*/
+.header-config {
+    background-color:#F5F4FA;
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    flex-direction: row; 
+}
+.header-menu-section {
+    display: flex;
+    flex-direction: row; 
+    padding-top: 10px;
+}
+
+.header-nav-box {
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+/* logo */
+.logo-intro {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    margin-left: 195px;
+    
+}
+.logo-body {color: #000000;}
+
+/* header menu */
+.header-menu-options-box {margin-top: -5px;}
+.header-menu-options-list {
+    display: flex;
+    text-indent: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.header-menu-contacts-links {
+    display: flex;
+    text-indent: 50px;
+    margin-left: 130pt;
+    padding-top: 10px;
+}
+/* establish corporative color style for references  */
+.corporative-style, 
+.corporative-style:visited,
+ .corporative-style:focus{color: #2196F3;}
+ 
+/* icons positioning */
+.icon-pointer-first {
+     position: absolute;
+     left:  648px;
+     top: 53px;
+}
+.icon-pointer-second {
+    position: absolute;
+    left:  1220px;
+    top: 54px;
+}
+
+/* main box */
+
+.main-hero-section {
+    width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+    
+}
+
+.main-hero-group-box {
+    /* padding: 208px 452px 280px 300px; */
+    /* justify-content: center; */
+    align-content: center;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.main-hero-section-text {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 44px;
+    letter-spacing: 6px;
+    line-height: 120%;
+}
+/* button */
+.service-button,
+.service-button:visited {
+    font-family: Roboto;
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 8px;
+}
+/* button anamation */
+.service-button:hover {
+    width: 208px;
+    height: 52px;
+}
+/* main articles */
+
+.main-articles-box {
+    margin: 0 0 0 620;
+}
+
+.main-articles-matrix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 480px;
+    width: 600px;
+    margin-top: 80px;
+  
+    
+}
+.main-articles-titles {
+    text-transform: uppercase;
+    color: #000;
+}
+.main-articles-element {
+    padding: 5px 20px 0 1px;
+    color: #212121;
+    font-family: Roboto;
+    width: 700px;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 20px;
+    
+}
+
+.main-articles-paragraph {
+    color: #757575;
+    width: 295px;
+    height: 50px;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.main-profile-section {
+    margin-top: 100px;
+    
+
+}
+
+.main-profile-images-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-profile-images-box {
+    width: 1800px;
+    height: 386px;
+    padding: 0px 0 155px 85px;
+}
+
+.main-profile-image {margin-left: 50px;}
+
+.main-titles-section {
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 0px;
+    color: #000;
+}
+
+.main-team-section {
+    background-color: #F5F4FA;
+    height: 648px;
+}
+.main-team-images-list {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-left: -100px;
+     
+  }
+
+.main-team-image-card {
+     margin-left: 20px;
+     width: 270px;
+     height: 368px ;
+     border-radius: 6px;
+     background-color: #fff;
+     box-shadow: 2px 2px 2px #d4d4d4;
+     text-align: center;
+}
+
+.footer-section {
+    width: 1600px;
+    height: 252px;
+    background-color:#2F303A;
+}
+.footer-logo-box {
+        padding-top: 60px;
+        padding-bottom: 2px;
+}
+
+.footer-logo-body {color: #FFFFFF;}
+
+.footer-contacts {
+    font-family: Roboto;
+    width: 400px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #a3a2a2;
+}
+.footer-contacts:active,
+.footer-contacts:focus,
+.footer-contacts:visited {color:#a3a2a2;}
+
+
+.footer-contacts-box {
+    margin-left: 160px;
+    margin-top: 0px;
+}
+
+.footer-adress { 
+    font-family: Roboto;
+    width: 400px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 10px;
+    color: #FFFFFF
+
+}
+
