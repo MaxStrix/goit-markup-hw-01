@@ -40,12 +40,14 @@ p, h1, h2, h3, a {
 /* header menu */
 .header-menu-options-list {
     display: flex;
-    margin-top: 12px;
+    margin-top: 8px;
     text-indent: 50px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    color: #212121;
+   
    
 }
 /* establish color style for references  */
@@ -59,9 +61,14 @@ p, h1, h2, h3, a {
 
 .header-menu-contacts-links {
     display: flex;
+    margin-top: 33px;
     margin-left: 200pt;
-    padding-top: 16px;
     text-indent: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
 }
  
 /* icons positioning */
@@ -164,7 +171,6 @@ p, h1, h2, h3, a {
     padding-top: 80px;
     padding-bottom: 30px;
     font-size: 36px;
-    line-height: 0px;
     color: #000;
 }
 
@@ -211,7 +217,7 @@ p, h1, h2, h3, a {
 
 .footer-contacts-list {
     margin-left: 160px;
-    margin-top: 0px;
+    margin-top: 22px;
 }
 
 .footer-adress { 
