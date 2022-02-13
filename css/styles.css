@@ -1,84 +1,79 @@
-/* global border box */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 .full-page-config {
     height: 2350px;
-    width: 1600px;
-    margin-left: 200px;
+    width: 1600px;   
+}
+
+p, h1, h2, h3, a { 
+    font-family: Roboto;
+    font-style: normal;
 }
 
 /* header -----------*/
 .header-config {
+    display: flex;
+    flex-direction: row; 
     background-color:#F5F4FA;
     width: 1600px;
     height: 80px;
-    display: flex;
-    flex-direction: row; 
-}
-.header-menu-section {
-    display: flex;
-    flex-direction: row; 
-    padding-top: 10px;
 }
 
-.header-nav-box {
+.header-menu-nav-box {
     display: flex;
     flex-direction: row; 
-    
+    margin-top: 24px;
 }
 
 /* logo */
 .logo-intro {
+    margin-left: 200px;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
-    margin-left: 195px;
-    
+    color: #2196F3;  
 }
 .logo-body {color: #000000;}
 
 /* header menu */
-.header-menu-options-box {margin-top: -5px;}
 .header-menu-options-list {
     display: flex;
+    margin-top: 12px;
     text-indent: 50px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+   
 }
+/* establish color style for references  */
+.corporative-style, 
+.corporative-style:visited,
+.corporative-style:focus{color: #2196F3;}
+
+.normal-style,
+.normal-style:visited,
+.normal-style:focus  {color:#000;}
 
 .header-menu-contacts-links {
     display: flex;
+    margin-left: 200pt;
+    padding-top: 16px;
     text-indent: 50px;
-    margin-left: 130pt;
-    padding-top: 10px;
 }
-/* establish corporative color style for references  */
-.corporative-style, 
-.corporative-style:visited,
- .corporative-style:focus{color: #2196F3;}
  
 /* icons positioning */
 .icon-pointer-first {
      position: absolute;
-     left:  648px;
+     left: 450px;
      top: 53px;
 }
 .icon-pointer-second {
     position: absolute;
-    left:  1220px;
-    top: 54px;
+    left: 1117px;
+    top: 55px;
 }
 
 /* main box */
@@ -87,12 +82,9 @@
     width: 1600px;
     height: 600px;
     background-color: #2F303A;
-    
 }
 
 .main-hero-group-box {
-    /* padding: 208px 452px 280px 300px; */
-    /* justify-content: center; */
     align-content: center;
     text-align: center;
     padding-top: 200px;
@@ -100,11 +92,11 @@
 
 .main-hero-section-text {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 44px;
-    letter-spacing: 6px;
-    line-height: 120%;
+    letter-spacing: 1px;
+    line-height: 60px;
+    height: 120px;
 }
 /* button */
 .service-button,
@@ -125,70 +117,53 @@
 /* main articles */
 
 .main-articles-box {
-    margin: 0 0 0 620;
+    display: flex;
+    justify-content: center;
 }
 
 .main-articles-matrix {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 480px;
-    width: 600px;
     margin-top: 80px;
-  
-    
+    padding-left: 80px;
 }
+
 .main-articles-titles {
     text-transform: uppercase;
     color: #000;
 }
 .main-articles-element {
-    padding: 5px 20px 0 1px;
+    padding: 5px 70px 0 1px;
     color: #212121;
-    font-family: Roboto;
-    width: 700px;
-    height: 50px;
-    font-size: 16px;
-    margin-left: 20px;
-    
+    line-height: 24px;
+    font-size: 16px; 
 }
 
 .main-articles-paragraph {
     color: #757575;
-    width: 295px;
+    width: 240px;
     height: 50px;
-    font-style: normal;
     font-size: 14px;
-    
 }
 
-.main-profile-section {
-    margin-top: 100px;
-    
-
-}
+.main-profile-section {margin-top: 100px;}
 
 .main-profile-images-list {
     display: flex;
     flex-direction: row;
-}
-
-.main-profile-images-box {
     width: 1800px;
     height: 386px;
-    padding: 0px 0 155px 85px;
+    padding: 0px 0 155px 145px;
 }
 
 .main-profile-image {margin-left: 50px;}
 
-.main-titles-section {
+.main-titles {
     text-align: center;
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 30px;
-    font-family: Roboto;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 0px;
     color: #000;
 }
@@ -201,9 +176,8 @@
      display: flex;
      flex-direction: row;
      justify-content: center;
-     margin-left: -100px;
-     
-  }
+     margin-left: -100px;   
+}
 
 .main-team-image-card {
      margin-left: 20px;
@@ -219,18 +193,14 @@
     width: 1600px;
     height: 252px;
     background-color:#2F303A;
-}
-.footer-logo-box {
-        padding-top: 60px;
-        padding-bottom: 2px;
+    padding-top: 60px;
 }
 
 .footer-logo-body {color: #FFFFFF;}
+.footer-logo-intro {color: #2196F3;}
 
 .footer-contacts {
-    font-family: Roboto;
     width: 400px;
-    font-style: normal;
     font-size: 16px;
     line-height: 28px;
     color: #a3a2a2;
@@ -239,19 +209,15 @@
 .footer-contacts:focus,
 .footer-contacts:visited {color:#a3a2a2;}
 
-
-.footer-contacts-box {
+.footer-contacts-list {
     margin-left: 160px;
     margin-top: 0px;
 }
 
 .footer-adress { 
-    font-family: Roboto;
     width: 400px;
-    font-style: normal;
     font-size: 16px;
     line-height: 10px;
     color: #FFFFFF
-
 }
 

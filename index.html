@@ -6,77 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
 
-    <!-- modern-normalize link -->
-     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-     />
-    <!-- fonts and other links -->
+    <!-- fonts and favicon links -->
+    <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- modern-normalize + styles.css link /// styles.css is ready but temporaly removed according to home work task conditions  -->
+    <link rel="stylesheet" type="text/css" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- determination of first class specify global page style rules: remove lists markers and references styles / can be moved to css/ as you wish, I'm just a student :) -->
+   
+    <!--  Critical CSS - general styles - it make page loading a bit faster, but it can be moved to css - as you wish, I'm just a student :) -->
     <style>
+        /* remove markers from lists */
         li {list-style-type:none;}
+        /* remove underlining from links */
         a {text-decoration:none;}
-        a:visited, 
-        a:active,
-        a:focus {color:currentColor;}
+        /* class "del" rules for hiden titles */
         .del {display: none;}
-        img {object-fit:contain;}
     </style>
 </head>
 <!-- full page config -->
 <body class="full-page-config"> 
           <!-- header area -->
         <header class="header-config" >
-            <section class="header-menu-section">
-                <!-- header logo -->
-               <nav class="header-nav-box">
-                    <a href="https://www.figma.com"> <p class="logo-intro">Web<span class="logo-body">Studio</span></p> </a>
-                    <!-- header menu options container -->
-                    <div class="header-menu-options-box">
-                            <ul class="header-menu-options-list">
-                                <li><a class="corporative-style" href="https://www.figma.com"> <p>Студия</p></a></li>
-                                <li><a href="https://www.figma.com"> <p> Портафолио</p></a></li>
-                                <li><a href="https://www.figma.com"> <p> Контакты</p></a></li>
-                            </ul>
-                    </div>
+                <nav class="header-menu-nav-box">
+                    <!-- header logo -->
+                        <a class="logo-intro" lang="en" href="https://maxstrix.netlify.app"> Web<span class="logo-body">Studio</span></a> 
+                        <!-- header menu options container -->
+                        <ul class="header-menu-options-list">
+                            <li><a class="corporative-style" href="https://maxstrix.netlify.app"> Студия</a></li>
+                            <li><a class="normal-style" href="https://maxstrix.netlify.app" > Портафолио</a></li>
+                            <li><a class="normal-style" href="https://maxstrix.netlify.app"> Контакты</a></li>
+                        </ul>
                 </nav>        
-                <!-- header contact links container-->
-                <div class="header-menu-contacts-box">
-                    <ul class="header-menu-contacts-links">
-                        <li><a class="corporative-style" href="mailto:info@devstudio.com">info@devstudio.co</a></li>
-                        <li><a href="tel:+380961111111">tel:+38 096 111 11 11</a></li>
-                    </ul>
-                </div>
+                     <!-- header contact links container-->
+                        <ul class="header-menu-contacts-links">
+                            <li><a class="corporative-style" href="mailto:info@devstudio.com" lang="en"> info@devstudio.co</a></li>
+                            <li><a class="normal-style" href="tel:+380961111111">tel:+38 096 111 11 11</a></li>
+                        </ul>
                 <!-- header markers icons -->
                <svg class="icon-pointer-first" width="20" height="20"><use href="./images/one-finger.svg#pointer"></use></svg>
                <svg class="icon-pointer-second" width="20" height="20"><use href="./images/one-finger.svg#pointer"></use></svg>
-            </section>
-              
-             
        </header>
 
             <!-- main area -->
             <main>
                 <!-- central section -->
-                <section class="main-hero-section">
-                    <div class="main-hero-group-box">
+                <div class="main-hero-section" style="background-color: #2F303A;">
+                    <!-- I put the color here, not in css, just for show why I create this div -->
+                    <section class="main-hero-group-box">
                         <h1 class="main-hero-section-text">Эффективные решения  <br /> для вашего бизнеса</h1>
                         <!-- service button box -->
-                        <div>
-                            <form action="https://www.figma.com">
-                                <button class="service-button">Заказать услугу</button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
+                        <form action="https://maxstrix.netlify.app">
+                            <button class="service-button">Заказать услугу</button>
+                        </form>
+                    </section>
+                </div>
 
-                <!-- main articles section-->
-                <article class="main-articles-box">
+                <!-- main article section-->
+                <section class="main-articles-box">
+                    <!-- hiden section title -->
                     <h2 class="del">Наши сильные стороны</h2>
                     <ul class="main-articles-matrix">
                         <li class="main-articles-element">
@@ -96,70 +85,59 @@
                             <p class="main-articles-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
                     </ul>
-                </article>
+                </section>
 
                 <!-- profile section-->
                 <section class="main-profile-section">
-                    <div class="main-titles-section"> <h2>Чем мы занимаемся</h2></div>
-                        <div class="main-profile-images-box">
+                     <h2 class="main-titles">Чем мы занимаемся</h2>
                             <ul class="main-profile-images-list">
                                 <li class="main-profile-image"><img src="./images/studio-demo1.jpg" alt="Экран ноутбука и рабочая обстановка студии" style="width: 100%;"></li>
                                 <li class="main-profile-image"><img src="./images/studio-demo2.jpg" alt="Процесс создания прииложения для смартфона" style="width: 100%;"></li>
                                 <li class="main-profile-image"><img src="./images/studio-demo3.jpg" alt="Тестирование нового приложения для планшетов" style="width: 100%;"></li>
                             </ul>
-                        </div> 
                 </section>
 
                 <!-- team box section -->
-                <section class="main-team-section" style="background-color: #F5F4FA">
-                    <div class="main-titles-section"><h2>Наша команда</h2></div>
-                    <div class="main-team-images-box">
+                <section class="main-team-section" >
+                        <h2 class="main-titles">Наша команда</h2>
                         <ul class="main-team-images-list">
-                            <li><div class="main-team-image-card">
-                                    <img src="./images/team-photo1.jpg" alt="дизайнер ВебСтудии, Игорь Демьянников" style="width: 100%;">
-                                    <h3>Игорь Демьяненко</h3>
-                                    <p>Product Designer</p>
-                                </div>
+                            <li class="main-team-image-card">
+                                    <img src="./images/team-photo1.jpg" alt="Лицо Игоря Демьянникова" style="width: 100%;">
+                                    <h3>Игорь Демьяненко </h3>
+                                    <p>Product Designer</p> 
                             </li>
-                            <li ><div class="main-team-image-card">
-                                    <img src="./images/team-photo2.jpg" alt=" Ольга Репина Фронтэнд разработчик студии" style="width: 100%;">
-                                    <h3>Ольга Репина</h3>
-                                    <p>Frontend Developer</p>
-                                </div>
+                            <li class="main-team-image-card" >
+                                    <img src="./images/team-photo2.jpg" alt="Лицо Ольги Репиной" style="width: 100%;">
+                                   <h3>Ольга Репина </h3> 
+                                   <p>Frontend Developer</p>  
                             </li>
-                            <li ><div class="main-team-image-card">
-                                    <img src="./images/team-photo3.jpg" alt="Маркетолог Николай Тарасов" style="width: 100%;">
-                                    <h3>Николай Тарасов</h3>
+                            <li class="main-team-image-card">
+                                    <img src="./images/team-photo3.jpg" alt="Лицо Николая Тарасова" style="width: 100%;">
+                                    <h3>Николай Тарасов </h3> 
                                     <p>Marketing</p>
-                                </div>
                             </li>
-                            <li ><div class="main-team-image-card">
-                                    <img src="./images/team-photo4.jpg" alt="Изображение Михаила Ермакова, дизайнера пользовательского интерфейся" style="width: 100%;">
-                                    <h3>Михаил Ермаков</h3>
-                                    <p>UI Designer</p>
-                                 </div>
+                            <li class="main-team-image-card">
+                                    <img src="./images/team-photo4.jpg" alt="Лицо Михаила Ермакова" style="width: 100%;">
+                                    <h3>Михаил Ермаков </h3>
+                                    <p>UI Designer</p> 
                             </li>
                         </ul>
-                    </div> 
                 </section>
             </main>
-
+    
             <!-- footer area -->
-            <footer>
-                <section class="footer-section">
-                   <!-- footer logo -->
-                    <div class="footer-logo-box"><a href="https://www.figma.com"> 
-                       <p class="logo-intro">Web<span class="footer-logo-body">Studio</span></p></a>
-                    </div>   
-                   <!-- footer address -->
-                    <address class="footer-contacts-box">
+            <footer class="footer-section">
+                          <!-- footer logo -->
+                   <a class="logo-intro" lang="en" href="https://maxstrix.netlify.app"> Web<span class="footer-logo-body">Studio</span></a>
+                          <!-- footer address -->
+                    <address class="footer-contacts-list">
                         <ul>
-                            <li><p class="footer-adress" > г. Киев, пр-т Леси Украинки, 26</p></li>
+                            <li><p class="footer-adress"> г. Киев, пр-т Леси Украинки, 26</p></li>
                             <li><a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.co</a></li>
                             <li><a class="footer-contacts" href="tel:+380961111111">tel:+38 096 111 11 11</a></li>
                         </ul>
                     </address>
-                </section>
             </footer>
     </body>
 </html>
+
