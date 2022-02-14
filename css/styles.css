@@ -1,13 +1,16 @@
-
+/* If have not workteam preferences, I prefer use SMACSS methodology as is possible / But as you wish :) */
 .full-page-config {
     height: 2350px;
-    width: 1600px;   
+    width: 1600px; 
+    background-color: #fff;  
 }
 
 p, h1, h2, h3, a { 
     font-family: Roboto;
     font-style: normal;
 }
+
+p, a, h3 {font-size: 14px;}
 
 /* header -----------*/
 .header-config {
@@ -18,7 +21,7 @@ p, h1, h2, h3, a {
     height: 80px;
 }
 
-.header-menu-nav-box {
+.header-menu-box {
     display: flex;
     flex-direction: row; 
     margin-top: 24px;
@@ -28,7 +31,6 @@ p, h1, h2, h3, a {
 .logo-intro {
     margin-left: 200px;
     font-family: Raleway;
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
@@ -43,13 +45,21 @@ p, h1, h2, h3, a {
     margin-top: 8px;
     text-indent: 50px;
     font-weight: 500;
-    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
-   
-   
 }
+.header-menu-contacts-links {
+    display: flex;
+    margin-top: 33px;
+    margin-left: 200pt;
+    text-indent: 50px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
 /* establish color style for references  */
 .corporative-style, 
 .corporative-style:visited,
@@ -58,20 +68,8 @@ p, h1, h2, h3, a {
 .normal-style,
 .normal-style:visited,
 .normal-style:focus  {color:#000;}
-
-.header-menu-contacts-links {
-    display: flex;
-    margin-top: 33px;
-    margin-left: 200pt;
-    text-indent: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #757575;
-}
  
-/* icons positioning */
+/* pointer icons positioning */
 .icon-pointer-first {
      position: absolute;
      left: 450px;
@@ -111,6 +109,7 @@ p, h1, h2, h3, a {
     font-family: Roboto;
     width: 200px;
     height: 50px;
+    line-height: 30px;
     background-color: #2196F3;
     font-size: 16px;
     color: #fff;
@@ -143,14 +142,15 @@ p, h1, h2, h3, a {
     padding: 5px 70px 0 1px;
     color: #212121;
     line-height: 24px;
-    font-size: 16px; 
+    letter-spacing: 0.03em;
+    
 }
 
 .main-articles-paragraph {
     color: #757575;
     width: 240px;
     height: 50px;
-    font-size: 14px;
+    
 }
 
 .main-profile-section {margin-top: 100px;}
@@ -161,6 +161,7 @@ p, h1, h2, h3, a {
     width: 1800px;
     height: 386px;
     padding: 0px 0 155px 145px;
+    
 }
 
 .main-profile-image {margin-left: 50px;}
@@ -207,7 +208,6 @@ p, h1, h2, h3, a {
 
 .footer-contacts {
     width: 400px;
-    font-size: 16px;
     line-height: 28px;
     color: #a3a2a2;
 }
@@ -221,8 +221,6 @@ p, h1, h2, h3, a {
 }
 
 .footer-adress { 
-    width: 400px;
-    font-size: 16px;
     line-height: 10px;
     color: #FFFFFF
 }
