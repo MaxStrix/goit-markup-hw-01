@@ -13,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <!-- modern-normalize + styles.css link /// styles.css removed according to home work task conditions  -->
     <link rel="stylesheet" type="text/css" href="css/modern-normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
    
     <!--  Critical CSS - general styles -  removed according to home work task conditions -->
     <!-- <style>
+        img {width: 100%;}
         /* remove markers from lists */
         li {list-style-type:none;}
         /* remove underlining from links */
@@ -64,27 +65,33 @@
                 </div>
 
                 <!-- main article section-->
-                <section class="main-articles-box">
+              <section class="main-articles-box">
                     <!-- hiden section title -->
                     <h2 class="del">Наши сильные стороны</h2>
-                    <dl class="main-articles-matrix">
-                        <dt class="main-articles-titles"> Внимание к деталям</dt>
-                        <dd class="main-articles-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</dd>
-                
-                        <dt class="main-articles-titles">Пунктуальность</dt>
-                        <dd class="main-articles-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</dd>
-                
-                        <dt class="main-articles-titles">Планирование</dt>
-                        <dd class="main-articles-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает</dd> 
-                    
-                        <dt class="main-articles-titles">Современные технологии</dt>
-                        <dd class="main-articles-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</dd>
-                     </dl>
+                    <ul class="main-articles-matrix">
+                        <li class="main-articles-element">
+                            <h3 class="main-articles-titles"> Внимание к деталям</h3>
+                            <p class="main-articles-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </li>
+                        <li class="main-articles-element">
+                            <h3 class="main-articles-titles">Пунктуальность</h3>
+                            <p class="main-articles-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </li>
+                        <li class="main-articles-element">
+                            <h3 class="main-articles-titles">Планирование</h3>
+                            <p class="main-articles-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает</p>
+                        </li>
+                        <li class="main-articles-element">
+                            <h3 class="main-articles-titles">Современные технологии</h3>
+                            <p class="main-articles-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </li>
+                    </ul>
                 </section>
 
                 <!-- profile section-->
                 <section class="main-profile-section">
                      <h2 class="main-titles">Чем мы занимаемся</h2>
+                     <!--  img style width added here instead of header or scc according to home work task conditions -->
                             <ul class="main-profile-images-list">
                                 <li class="main-profile-image"><img src="./images/studio-demo1.jpg" alt="Экран ноутбука и рабочая обстановка студии" style="width: 30%;"></li>
                                 <li class="main-profile-image"><img src="./images/studio-demo2.jpg" alt="Процесс создания прииложения для смартфона" style="width: 30%;"></li>
@@ -95,6 +102,7 @@
                 <!-- team section -->
                 <section class="main-team-section">
                         <h2 class="main-titles">Наша команда</h2>
+                         <!--  img style width added here instead of header or scc according to home work task conditions -->
                         <ul class="main-team-images-list">
                             <li class="main-team-image-card">
                                     <img src="./images/team-photo1.jpg" alt="Лицо Игоря Демьянникова" style="width: 30%;">
