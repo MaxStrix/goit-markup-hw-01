@@ -8,8 +8,8 @@ window.onload = function () {
 }
 
 document.write("<div class=\"rana\" style=\"margin-left: -600px;\">");
-document.write("    <img  id=\"flapFlap\" src=\"img/giphy.gif\" alt=\"runing cat\" style=\"position: fixed; padding-left: 2600px; z-index: -1; top: 50px;\">");
-document.write("    <img  id=\"flapFlop\" src=\"img/giphy.gif\" alt=\"runing cat\" style=\"position: fixed; transform: scaleX(-1); z-index: -1;top: 200px;\">");
+document.write("    <img  id=\"flapFlap\" src=\"images/giphy.gif\" alt=\"runing cat\" style=\"position: fixed; padding-left: 2600px; z-index: -1; top: 50px;\">");
+document.write("    <img  id=\"flapFlop\" src=\"images/giphy.gif\" alt=\"runing cat\" style=\"position: fixed; transform: scaleX(-1); z-index: -1;top: 200px;\">");
 document.write("</div>");
 
 
